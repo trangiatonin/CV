@@ -379,20 +379,28 @@ ul {
   float:right
 }
 
+.contact-form .input-top,
+.input-bot{
+  padding: 0 8px;
+}
+
 .contact-form input{
   outline: none;
-  padding: 8px;
+  line-height: 23px;
+  padding: 8px 8px;
 }
 .send-btn{
   line-height: 23px;
-  padding: 8px 16px;
+  padding: 8px 8px;
+  left: -8px;
+  right: -8px;
   width: 100%;
   
 }
 .send-btn:hover{
   line-height: 23px;
   padding: 8px 16px;
-  background-color:   #2563eb; 
+  background-color:   rgb(246, 102, 0); 
 }
 
 .contact-list a { color: var(--color-primary); }
