@@ -386,8 +386,15 @@ ul {
 .send-btn{
   line-height: 23px;
   padding: 8px 16px;
+  width: 100%;
   
 }
+.send-btn:hover{
+  line-height: 23px;
+  padding: 8px 16px;
+  background-color:   #2563eb; 
+}
+
 .contact-list a { color: var(--color-primary); }
 .contact-list a:hover { text-decoration: underline; }
 
