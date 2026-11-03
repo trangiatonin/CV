@@ -18,8 +18,8 @@
   </head>
 
   <body>
-    <!-- ========================================================== -->
-    <!-- HEADER: nhận diện + điều hướng chính                        -->
+   <!-- ========================================================== -->
+    <!-- HEADER: nhận diện + điều hướng chính (TC2: HTML5 Ngữ nghĩa) -->
     <!-- ========================================================== -->
     <header class="site-header">
       <div class="container header-inner">
@@ -29,7 +29,7 @@
           <span class="brand-name">Trần Gia Tô Nin</span>
         </a>
 
-        <!-- NAV dùng Flexbox (xem styles.css) -->
+        <!-- NAV dùng Flexbox (TC3) -->
         <nav class="main-nav" aria-label="Điều hướng chính">
           <ul class="nav-list">
             <li><a href="#about">Giới thiệu</a></li>
@@ -42,7 +42,7 @@
     </header>
 
     <!-- ========================================================== -->
-    <!-- MAIN: toàn bộ nội dung chính của trang                      -->
+    <!-- MAIN: toàn bộ nội dung chính của trang            -->
     <!-- ========================================================== -->
     <main id="top">
       <!-- ----- SECTION: Giới thiệu / Hero ----- -->
@@ -63,7 +63,7 @@
             </div>
           </div>
 
-          <!-- Ảnh đại diện: dùng placeholder, thay bằng ảnh thật của bạn -->
+          <!-- Ảnh đại diện -->
           <figure class="hero-avatar">
             <img
               src="assets/img/avt.jpg"
@@ -94,15 +94,13 @@
         </div>
       </section>
 
-      <!-- ----- SECTION: Dự án (danh sách thẻ dùng CSS Grid) ----- -->
+      <!-- ----- SECTION: Dự án  ----- -->
       <section id="projects" class="section section-muted">
         <div class="container">
           <h2 class="section-title">Dự án tiêu biểu</h2>
           <p class="section-sub">Một vài sản phẩm tôi đã thực hiện.</p>
 
-          <!-- .project-grid dùng CSS Grid (xem styles.css) -->
           <div class="project-grid">
-            <!-- Mỗi thẻ là một <article> độc lập, có thể đứng riêng -->
             <article class="card">
               <img
                 class="card-media"
@@ -192,59 +190,75 @@
               </div>
             </article>
           </div>
-          <!-- /.project-grid -->
         </div>
       </section>
 
       <!-- ----- SECTION: Liên hệ ----- -->
       <section id="contact" class="section">
         <div class="container contact-inner">
-          <h2 class="section-title">Liên hệ</h2>
-          <p class="section-sub">
-            Mở cho các cơ hội thực tập &amp; việc làm Frontend.
-          </p>
+          <h2 class="section-title">CONTACT</h2>
+          <p class="section-sub">Fan? Drop a note!</p>
 
-          <div class="contact-box">
-            <ul class="contact-list">
-              <li>
-                <span class="contact-label">Email</span>
-                <a href="mailto:an.nguyen@example.com">trannin028@gmail.com</a>
-              </li>
-              <li>
-                <span class="contact-label">GitHub</span>
-                <a href="#">github.com/trangiatonin</a>
-              </li>
-              <li>
-                <span class="contact-label">LinkedIn</span>
-                <a href="#">linkedin.com/in/trangiatonin</a>
-              </li>
-            </ul>
+          <div class="contact-row">
+            <!-- Cột thông tin liên hệ -->
+            <div class="contact-info">
+              <p><i class="fa fa-map-marker"></i> Hà Nội, Việt Nam</p>
+              <p><i class="fa fa-phone"></i> Phone: +84 1515151515</p>
+              <p><i class="fa fa-envelope"></i> Email: trannin028@gmail.com</p>
+            </div>
 
-            <form action="" class="contact-form">
-              <div class="input-top">
-                <input type="text" placeholder="Name" />
-                <input type="text" placeholder="Email" />
-              </div>
-              <div class="input-bot">
-                <input type="text" placeholder="Message" style="width: 100%" />
-              </div>
-              <button class="send-btn">SEND</button>
-            </form>
+            <!-- Cột Form liên hệ -->
+            <div class="contact-form-col">
+              <form action="" method="post" class="w3-form">
+                <div class="form-row-half">
+                  <input
+                    type="text"
+                    name="Name"
+                    placeholder="Name"
+                    required
+                    class="w3-input"
+                  />
+                  <input
+                    type="email"
+                    name="Email"
+                    placeholder="Email"
+                    required
+                    class="w3-input"
+                  />
+                </div>
+                <div class="form-row-full">
+                  <input
+                    type="text"
+                    name="Message"
+                    placeholder="Message"
+                    required
+                    class="w3-input"
+                  />
+                </div>
+                <button type="submit" class="w3-btn-send">SEND</button>
+              </form>
+            </div>
           </div>
         </div>
       </section>
     </main>
 
     <!-- ========================================================== -->
-    <!-- FOOTER                                                      -->
+    <!-- FOOTER                         -->
     <!-- ========================================================== -->
     <footer class="site-footer">
-      <div class="container footer-inner">
-        <p>
-          © 2026 Trần Gia Tô Nin. Thiết kế &amp; xây dựng bằng HTML5 + CSS3.
-        </p>
-        <a href="#top" class="to-top">↑ Lên đầu trang</a>
+      <div class="footer-icons">
+        <a href="#"><i class="fa fa-facebook-official"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-snapchat"></i></a>
+        <a href="#"><i class="fa fa-pinterest-p"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
       </div>
+      <p class="footer-text">
+        Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" rel="noopener">w3.css</a>
+      </p>
+      <p class="footer-copy">© 2026 Trần Gia Tô Nin. Thiết kế responsive cơ bản.</p>
     </footer>
   </body>
 </html>
